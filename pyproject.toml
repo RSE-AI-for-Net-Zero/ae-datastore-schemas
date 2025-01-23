@@ -6,6 +6,9 @@ version = "0.1"
 dev = ["pytest", "coverage",
        "sphinx", "pip-tools", "ruff", "pylint"]
 
+[project.entry-points."invenio_jsonschemas.schemas"]
+ae_datastore_schema = "ae_datastore_schemas.jsonschemas"
+
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"

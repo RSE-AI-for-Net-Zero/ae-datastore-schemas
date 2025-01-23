@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://www.example.com/root",
+    "$id": "local://domain/root.json",
     "title": "root",
     "description": "Root schema",
     "type": "object",
@@ -9,10 +9,10 @@
 	    "type": "object",
 	    "oneOf" : [
 		{
-		    "$ref": "/common/geo/geo"
+		    "$ref": "/common/geo/geo.json"
 		},
 		{
-		    "$ref": "/product/product"
+		    "$ref": "/product/product.json"
 		}
 	    ]
 	}

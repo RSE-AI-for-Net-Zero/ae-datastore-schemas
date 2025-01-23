@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/product/product",
+    "$id": "local://domain/product/product.json",
     "title": "Product",
     "description": "A product in the catalog",
     "type": "object",
