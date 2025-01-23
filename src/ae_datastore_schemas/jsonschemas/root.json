@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://www.example.com/root",
+    "title": "root",
+    "description": "Root schema",
+    "type": "object",
+    "properties": {
+	"entry_type": {
+	    "type": "object",
+	    "oneOf" : [
+		{
+		    "$ref": "/common/geo/geo"
+		},
+		{
+		    "$ref": "/product/product"
+		}
+	    ]
+	}
+    },
+    "required": ["entry_type"]
+}
