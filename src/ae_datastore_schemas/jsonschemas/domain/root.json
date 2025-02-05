@@ -16,6 +16,5 @@
 		}
 	    ]
 	}
-    },
-    "required": ["entry_type"]
+    }
 }
