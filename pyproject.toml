@@ -1,6 +1,6 @@
 [project]
 name = "ae-datastore-schemas"
-version = "0.1"
+dynamic = ["version"]
 
 [project.optional-dependencies]
 dev = ["pytest", "coverage",
@@ -15,6 +15,9 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "ae_datastore_schemas.__version__"}
 
 [tool.coverage.run]
 branch = true
